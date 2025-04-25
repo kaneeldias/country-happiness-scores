@@ -16,6 +16,18 @@ Using the two provided datasets, perform the following tasks:
 - Model drift analysis
 - Visualization of the results 
 
+## Summary
+- Not all columns were the same across both datasets
+- Merged columns `family` in 2015 and `social_support` in 2019
+- Analyzed the correlation between the different features and the happiness score using scatter plot and a correlation matrix
+- Plotted the distribution of the different features using histograms and box plots
+- Standardized the data using z-score normalization
+- Clustered using the K-means algorithm
+  - Number of clusters were determined using the elbow method and silhouette score
+- Clusters from 2015 were mapped to those in 2019 using the Euclidean distance
+- Model drift was analyzed using the KL divergence 
+- Visualized the clusters using Principal Component Analysis
+- Visualized the centroid shifts using Principal Component Analysis
 
 ```python
 import pandas as pd
